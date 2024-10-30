@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Shop from "./pages/Shop";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
+import AccountHistory from "./pages/AccountHistory";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
           <Route path="/shop" element={<Shop />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/account/history" element={<AccountHistory />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
