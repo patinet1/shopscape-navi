@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Checkbox } from "@/components/ui/checkbox";
-import { CreditCard, Paypal } from "lucide-react";
+import { CreditCard, Wallet } from "lucide-react";
 
 interface Props {
   onBack: () => void;
@@ -62,7 +62,7 @@ const PaymentForm = ({ onBack, onNext }: Props) => {
           <div className="flex items-center space-x-4 border rounded-lg p-4">
             <RadioGroupItem value="paypal" id="paypal" />
             <Label htmlFor="paypal" className="flex items-center gap-2">
-              <Paypal className="h-4 w-4" />
+              <Wallet className="h-4 w-4" />
               PayPal
             </Label>
           </div>
